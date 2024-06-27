@@ -19,19 +19,25 @@
 git clone https://github.com/kazuki306/restaurant-with-genai.git
 ```
 
-2. Dockerイメージをビルドします:
+2. クローンしたリポジトリに移動します:
+
+```
+cd restaurant-with-genai 
+```
+
+3. Dockerイメージをビルドします:
 
 ```
 docker build -t streamlit-genai-app .
 ```
 
-3. コンテナを起動します:
+4. コンテナを起動します:
 
 ```
 docker run -p 8080:8501 streamlit-genai-app
 ```
 
-4. ブラウザで `http://localhost:8080` にアクセスしてアプリケーションを利用できます。
+5. ブラウザで `http://localhost:8080` にアクセスしてアプリケーションを利用できます。
 
 ## 注意事項
 
