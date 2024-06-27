@@ -9,6 +9,6 @@ COPY . .
 
 ENV AWS_DEFAULT_REGION us-west-2
 
-EXPOSE 8080
+EXPOSE 8501
 
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8080", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
