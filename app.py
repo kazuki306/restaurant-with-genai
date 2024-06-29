@@ -1,9 +1,8 @@
 import streamlit as st
-from st_pages import Page, Section, show_pages, add_indentation
+from st_pages import Page, Section, show_pages, add_page_title
 st.set_page_config(page_title="AIアシスタントさん", page_icon=":robot_face:", layout="wide")
 
-# st.title("AIアシスタントさん")
-# st.write("左側のサイドバーから各機能を選択してください。")
+add_page_title()
 
 show_pages(
     [
@@ -22,8 +21,6 @@ show_pages(
         Page("langchain-rag/app.py", "- プレイグラウンド"),
     ]
 )
-
-add_indentation()
 
 # ここにトップページの内容を追加
 st.markdown("""
